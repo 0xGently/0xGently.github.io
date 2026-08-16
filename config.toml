@@ -1,0 +1,42 @@
+baseURL = 'https://0xGently.github.io/'
+languageCode = 'en-us'
+title = '0xGently'
+theme = 'PaperMod'
+
+[params]
+  # Locks the theme to dark mode by default
+  defaultTheme = "dark"
+  
+  # Aesthetic settings for content
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true # Adds a copy button to code blocks (Most important!)
+  ShowBreadCrumbs = true
+  
+  # Enables the profile mode on the home page
+  [params.profileMode]
+    enabled = true
+    title = "0xGently"
+    subtitle = "Malware Analysis | Reverse Engineering | CTI"
+    imageUrl = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" # You can put your own logo
+    imageWidth = 120
+    imageHeight = 120
+    imageTitle = "0xGently"
+
+  # Your social media and GitHub links
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/0xGently"
+
+
+# Top menu settings
+[menu]
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archive"
+    url = "/archives/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
