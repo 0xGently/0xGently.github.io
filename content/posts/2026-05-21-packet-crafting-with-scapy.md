@@ -60,7 +60,7 @@ Bu yapıyı oluşturmak, paketin ağda nasıl taşınacağını ve hedefin nası
 ### Bind Mantığı
 
 - **Alt katman** üst katmanın taşıyıcı katmanı gibidir. Yani TCP, IP üzerinden taşınır; IP, Ethernet üzerinden.
-- Bind mantığı, Scapy’de `/` operatörü ile yapılır. Örnek: `ip_layer / tcp_layer / Raw("data")`.
+- Bind mantığı, Scapy’de `/` operatörü ile yapılır. Örnek: ``ip_layer / tcp_layer / Raw("data")``.
 - Bu, OSI modeline göre doğal bir paket hiyerarşisi oluşturur.
 
 ### Crafting Mantığı
