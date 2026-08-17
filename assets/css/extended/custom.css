@@ -1,0 +1,10 @@
+.first-entry.home-info {
+    align-items: center;
+    text-align: center;
+}
+.first-entry.home-info .entry-header {
+    text-align: center;
+}
+.first-entry.home-info .social-icons {
+    justify-content: center;
+}
