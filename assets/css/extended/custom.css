@@ -8,3 +8,17 @@
 .first-entry.home-info .social-icons {
     justify-content: center;
 }
+
+
+.first-entry.home-info::after {
+    content: "Recent Posts";
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    color: var(--primary);
+}
