@@ -19,12 +19,11 @@ theme = 'PaperMod'
   [params.profileMode]
     enabled = false
   [params.homeInfoParams]
-    title = "0xGently"
-    subtitle = "Malware Analysis | Reverse Engineering | CTI"
-    imageUrl = "https://avatars.githubusercontent.com/u/225085536?v=4" # You can put your own logo
-    imageWidth = 150
-    imageHeight = 150
-    imageTitle = "0xGently"
+    Title = "0xGently"
+    Content = """
+    <img src="https://avatars.githubusercontent.com/u/225085536?v=4" alt="0xGently" style="width: 140px; border-radius: 50%; margin-bottom: 15px;"> <br>
+    Malware Analysis | Reverse Engineering | CTI
+    """
 
   # Your social media and GitHub links
   [[params.socialIcons]]
@@ -49,3 +48,7 @@ theme = 'PaperMod'
     name = "Search"
     url = "/search/"
     weight = 10
+
+
+  [markup.goldmark.renderer]
+    unsafe = true
