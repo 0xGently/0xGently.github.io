@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = '0xGently'
 theme = 'PaperMod'
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"] # Arama motorunun çalışması için JSON şart
+
 [params]
   # Locks the theme to dark mode by default
   defaultTheme = "dark"
@@ -14,12 +17,13 @@ theme = 'PaperMod'
   
   # Enables the profile mode on the home page
   [params.profileMode]
-    enabled = true
+    enabled = false
+  [params.homeInfoParams]
     title = "0xGently"
     subtitle = "Malware Analysis | Reverse Engineering | CTI"
-    imageUrl = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" # You can put your own logo
-    imageWidth = 120
-    imageHeight = 120
+    imageUrl = "https://avatars.githubusercontent.com/u/225085536?v=4" # You can put your own logo
+    imageWidth = 150
+    imageHeight = 150
     imageTitle = "0xGently"
 
   # Your social media and GitHub links
@@ -40,3 +44,8 @@ theme = 'PaperMod'
     name = "Tags"
     url = "/tags/"
     weight = 20
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 10
