@@ -1,9 +1,7 @@
 ---
-layout: post
 title: "Packet Crafting with Scapy"
-author: "0xGently"
+date: 2025-05-21
 draft: false
-tags: [Python, Scapy, Ağ Güvenliği]
 ---
 
 ![Scapy Logo](/home/Gently/maldev/scapy-image.webp)
