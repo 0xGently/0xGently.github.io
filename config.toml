@@ -6,30 +6,32 @@ theme = 'PaperMod'
 [outputs]
   home = ["HTML", "RSS", "JSON"] # Arama motorunun çalışması için JSON şart
 
+# HTML kodlarının çalışması için gereken güvenlik izni (En üstte olması daha sağlıklıdır)
+[markup.goldmark.renderer]
+  unsafe = true
+
 [params]
   # Locks the theme to dark mode by default
   defaultTheme = "dark"
   
   # Aesthetic settings for content
   ShowReadingTime = true
-  ShowCodeCopyButtons = true # Adds a copy button to code blocks (Most important!)
+  ShowCodeCopyButtons = true
   ShowBreadCrumbs = true
   
   # Enables the profile mode on the home page
   [params.profileMode]
     enabled = false
+    
+  # Ana Sayfa Bilgileri (Boşluksuz tek satır yapıldı ki kod bloğuna dönüşmesin)
   [params.homeInfoParams]
     Title = "0xGently"
-    Content = """
-    <img src="https://avatars.githubusercontent.com/u/225085536?v=4" alt="0xGently" style="width: 140px; border-radius: 50%; margin-bottom: 15px;"> <br>
-    Malware Analysis | Reverse Engineering | CTI
-    """
+    Content = """<img src="https://avatars.githubusercontent.com/u/225085536?v=4" alt="0xGently" style="width: 140px; border-radius: 50%; margin-bottom: 15px;"><br><br>Malware Analysis | Reverse Engineering | CTI"""
 
   # Your social media and GitHub links
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/0xGently"
-
 
 # Top menu settings
 [menu]
@@ -38,17 +40,15 @@ theme = 'PaperMod'
     name = "Archive"
     url = "/archives/"
     weight = 10
+    
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
     weight = 20
+    
   [[menu.main]]
     identifier = "search"
     name = "Search"
     url = "/search/"
-    weight = 10
-
-
-  [markup.goldmark.renderer]
-    unsafe = true
+    weight = 30
