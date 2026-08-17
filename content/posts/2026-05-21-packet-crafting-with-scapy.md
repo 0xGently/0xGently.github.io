@@ -4,8 +4,7 @@ date: 2025-05-21
 draft: false
 ---
 
-![Scapy Logo](/home/Gently/maldev/scapy-image.webp)
-
+![Scapy Logo](/assets/img/scapy-image.webp)
 
 Ağ güvenliği ve siber güvenlik dünyasında, bir paketin nasıl oluştuğunu, nasıl manipüle edilebileceğini ve özel paketler oluşturmayı bilmek çok kritik bir beceridir. Python programlama dili ve Scapy kütüphanesi, bu becerileri öğrenmek için mükemmel bir platform sunar. Bu yazıda, Scapy kullanarak ağ paketlerini oluşturmanın ve analiz etmenin temellerini aşama aşama detaylandıracağım.
 
@@ -25,7 +24,7 @@ Scapy’nin gücü, onu hem pasif hem aktif ağ çalışmalarında kullanabilmek
 
 Paket manipülasyonu ve crafting yapmadan önce, ağ paketlerinin yapılarını anlamak çok önemlidir. Ağ paketleri, OSI modelinin katmanları ile doğrudan ilişkilidir:
 
-![OSI Modeli Katmanları](/assets/img/scapy-image-2-.webp)
+![OSI Modeli Katmanları](/assets/img/scapy-image-2.webp)
 
 - **Ethernet (Data Link Layer)**: Paketlerin fiziksel ağda taşınmasını sağlar. Kaynak ve hedef MAC adreslerini içerir.
 - **IP (Network Layer)**: Paketlerin ağlar arasında yönlendirilmesini sağlar. IP adresleri buradadır.
