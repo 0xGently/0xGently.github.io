@@ -1,5 +1,6 @@
 baseURL = 'https://0xGently.github.io/'
-languageCode = 'en-us'
+defaultContentLanguage = 'tr'
+languageCode = 'tr-TR'
 title = '0xGently'
 theme = 'PaperMod'
 
