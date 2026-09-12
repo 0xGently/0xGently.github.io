@@ -53,3 +53,14 @@ theme = 'PaperMod'
     name = "Search"
     url = "/search/"
     weight = 20
+
+[languages]
+  [languages.tr]
+    languageName = "Türkçe"
+    weight = 1
+    title = "0xGently"
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    title = "0xGently"
+
