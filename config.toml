@@ -12,6 +12,7 @@ theme = 'PaperMod'
 
 [params]
   # Locks the theme to dark mode by default
+  assets.favicon = "/favicon.png"
   defaultTheme = "dark"
   
   # Aesthetic settings for content
