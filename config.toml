@@ -12,7 +12,7 @@ theme = 'PaperMod'
 
 [params]
   # Locks the theme to dark mode by default
-  assets.favicon = "/favicon.png"
+  
   defaultTheme = "dark"
   
   # Aesthetic settings for content
@@ -20,6 +20,11 @@ theme = 'PaperMod'
   ShowCodeCopyButtons = true
   ShowBreadCrumbs = true
   
+  [params.assets]
+    favicon = "/favicon.png"
+    favicon16x16 = "/favicon.png"
+    favicon32x32 = "/favicon.png"
+    apple_touch_icon = "/favicon.png"
   # Enables the profile mode on the home page
   [params.profileMode]
     enabled = false
