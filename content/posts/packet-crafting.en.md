@@ -1,8 +1,12 @@
 ---
-title: "Packet Crafting with Scapy" 
-date: 2025-05-21 
+title: Packet Crafting with Scapy
+date: 2025-05-21
 draft: false
+author: 0xGently
+tags:
+  - Python
 ---
+![Scapy Logo](/assets/img/scapy-image.webp)
 
 In the world of network security and cybersecurity, understanding how a packet is formed, how it can be manipulated, and how to craft custom packets is a crucial skill. The Python programming language and the Scapy library provide an excellent platform for learning these skills. In this post, I will detail step-by-step the fundamentals of creating and analyzing network packets using Scapy.
 
@@ -26,6 +30,8 @@ Scapy's power comes from its ability to be used in both passive and active netwo
 ## 2. Basic Concepts
 
 Before performing packet manipulation and crafting, it is very important to understand the structure of network packets. Network packets are directly related to the layers of the OSI model:
+
+![OSI Modeli Katmanları](/assets/img/scapy-image-2.webp)
 
 - **Ethernet (Data Link Layer)**: Ensures the transmission of packets on the physical network. Contains source and destination MAC addresses.
     

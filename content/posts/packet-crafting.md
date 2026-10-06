@@ -1,7 +1,10 @@
 ---
-title: "Packet Crafting with Scapy"
+title: Packet Crafting with Scapy
 date: 2025-05-21
 draft: false
+author: 0xGently
+tags:
+  - Python
 ---
 
 ![Scapy Logo](/assets/img/scapy-image.webp)

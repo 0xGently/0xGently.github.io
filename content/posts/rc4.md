@@ -1,7 +1,10 @@
 ---
-title: "RC4 Şifreleme"
+title: RC4 Şifreleme
 date: 2026-04-20
 draft: false
+author: 0xGently
+tags:
+  - encryption
 ---
 ## RC4 Şifrelemesi
 

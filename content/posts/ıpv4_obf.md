@@ -1,7 +1,10 @@
 ---
-title: "IPv4/IPv6 Obfuscation"
+title: IPv4/IPv6 Obfuscation
 date: 2026-02-05
 draft: false
+author: 0xGently
+tags:
+  - obfuscation
 ---
 ## IPv4/IPv6 Obfuscation
 

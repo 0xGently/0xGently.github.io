@@ -1,14 +1,17 @@
 ---
-title: "Chacha20 Şifreleme"
+title: Chacha20 Şifreleme
 date: 2026-04-01
 draft: false
+author: 0xGently
+tags:
+  - encryption
 ---
 
 ## ChaCha20 Şifrelemesi
 
-Bu metinde Chacha20 den bahsedeceğim. Açıkcası konuya nasıl giriş yapacağımı düşündüm ama mantıklı bir giriş cümlesi kuramadım. Ondan dolayı direkt olarak konuya girmeyi tercih ediyorum.
+Bu metinde Chacha20 den bahsedeceğim.
 
-Dosya boyutu ve basitlik her şeydir. ChaCha20'yi tercih etmemizin tek sebebi var: **Küçük, hızlı ve ekstradan deşifre bloğu yazmana gerek bırakmıyor.**
+Dosya boyutu ve basitlik her şeydir. ChaCha20'yi tercih etmemizin tek sebebi var: **Küçük, hızlı ve ekstradan deşifre bloğu yazmanıza gerek bırakmıyor.**
 
 Peki neden ChaCha20'yi seçiyoruz? Çünkü inanılmaz derecede hızlıdır, işlemcinin özel şifreleme donanımlarına (AES-NI gibi) ihtiyaç duymaz ve C/C++ ile sıfırdan yazması (implementasyonu) çok daha zahmetsizdir. Ayrıca, şifreleme ve deşifreleme (encrypt/decrypt) işlemleri için birebir aynı kodu kullanırız, bu da yazdığımız zararlı yazılımın boyutunu (stub size) küçültür.
 

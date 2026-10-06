@@ -1,7 +1,10 @@
 ---
-title: "Chacha20 Encryption"
+title: Chacha20 Encryption
 date: 2026-04-01
 draft: false
+author: 0xGently
+tags:
+  - encryption
 ---
 # ChaCha20 Encryption
 
@@ -14,7 +17,7 @@ So why do we choose ChaCha20? Because it is exceptionally fast, does not rely on
 Today, we will examine how this mechanism works through standard ChaCha20 C code. Without getting bogged down in hundreds of lines of memory management or error handling, we focus strictly on the 3 most crucial aspects of the algorithm.
 
 > Note: If you would like to inspect the remainder of the code, you can find it via the following link:
-> `[https://www.oryx-embedded.com/doc/chacha_8c_source.html](https://www.oryx-embedded.com/doc/chacha_8c_source.html)`
+> https://www.oryx-embedded.com/doc/chacha_8c_source.html
 
 ---
 

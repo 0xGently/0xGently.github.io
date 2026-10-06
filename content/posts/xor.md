@@ -1,7 +1,10 @@
 ---
-title: "XOR Şifreleme"
+title: XOR Şifreleme
 date: 2026-04-15
 draft: false
+author: 0xGently
+tags:
+  - encryption
 ---
 
 ## XOR Şifrelemesi

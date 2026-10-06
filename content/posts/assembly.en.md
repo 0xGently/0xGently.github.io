@@ -1,8 +1,10 @@
 ---
-title: "What are Prologue and Epilogue in Assembly?"
+title: What are Prologue and Epilogue in Assembly?
 date: 2026-05-21
 draft: false
-author: "0xGently"
+author: 0xGently
+tags:
+  - Assembly
 ---
 
 When writing programs in high-level languages, there are many operations handled automatically in the background that we must manage manually in low-level languages (especially Assembly). Among the most critical of these are the **prologue** and **epilogue** sequences.

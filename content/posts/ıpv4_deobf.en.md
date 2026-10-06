@@ -1,9 +1,11 @@
-
-title: "IPv4/IPv6 DeObfuscation"  
-date: 2026-04-10  
+---
+title: IPv4/IPv6 DeObfuscation
+date: 2026-04-10
 draft: false
-
-
+author: 0xGently
+tags:
+  - obfuscation
+---
 ## IPv4/v6 DeObfuscation
 
 In this post, we will examine how a network configuration function, which looks completely ordinary from the outside, is transformed into a shellcode decoder. Our goal is to understand the attacker's mindset and design our defensive systems to catch these types of "normal-looking anomalies."

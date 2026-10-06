@@ -1,7 +1,10 @@
 ---
-title: "RC4 Encryption"
+title: RC4 Encryption
 date: 2026-04-20
 draft: false
+author: 0xGently
+tags:
+  - encryption
 ---
 # RC4 Encryption
 
