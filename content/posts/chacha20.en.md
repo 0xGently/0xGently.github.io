@@ -6,7 +6,7 @@ author: 0xGently
 tags:
   - encryption
 ---
-# ChaCha20 Encryption
+## ChaCha20 Encryption
 
 In this post, I will talk about ChaCha20. Frankly, I thought about how to introduce the topic, but I couldn't come up with a sensible introductory sentence. Therefore, I prefer to dive straight into the subject.
 
@@ -21,7 +21,7 @@ Today, we will examine how this mechanism works through standard ChaCha20 C code
 
 ---
 
-## 1. Initializing the State Matrix
+### 1. Initializing the State Matrix
 
 ChaCha20 is a stream cipher. Its objective is to use the provided key to generate a very long, pseudo-random keystream. Everything begins with constructing a 4x4 table (a state matrix of 16 32-bit words / 64 bytes) in memory.
 
@@ -42,7 +42,7 @@ When you place these hex values in little-endian order and convert them to ASCII
 
 ---
 
-## 2. ARX and Permutation (Mixing)
+### 2. ARX and Permutation (Mixing)
 
 The security of the algorithm stems from mixing the values within that state matrix using an intricate mathematical routine prior to keystream generation. Let us take a close look at the core engine of the implementation, the `QUARTER_ROUND` macro:
 
@@ -88,7 +88,7 @@ This sequence iterates over the table across 20 rounds (hence the name ChaCha20)
 
 ---
 
-## 3. Encrypting the Payload
+### 3. Encrypting the Payload
 
 We constructed the matrix, executed the permutation rounds, and derived the keystream (`k`). Now we arrive at the core task: encrypting the target payload.
 

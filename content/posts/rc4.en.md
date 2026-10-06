@@ -6,7 +6,7 @@ author: 0xGently
 tags:
   - encryption
 ---
-# RC4 Encryption
+## RC4 Encryption
 
 RC4 is a symmetric stream cipher that encrypts data byte by byte rather than in blocks. Under the hood, it consists of two primary phases: the Key-Scheduling Algorithm (KSA), where the key is initialized and permuted in memory, and the Pseudo-Random Generation Algorithm (PRGA), which generates keystream bytes to be XORed with the data. Thanks to its symmetric architecture, the exact same routine is utilized for both encryption and decryption.
 
@@ -20,7 +20,7 @@ The following structure illustrates how to perform this operation using Windows'
 
 ---
 
-## 1. Required Structures
+### 1. Required Structures
 
 Because `SystemFunction032` is an undocumented API, it does not directly take a raw byte pointer (`PBYTE`). Instead, it expects a specific internal buffer descriptor structure similar to `USTRING` (or `UNICODE_STRING` / `ANSI_STRING`).
 
@@ -37,7 +37,7 @@ This struct, defined here as `_RC4_CTX`, provides the memory layout expected by 
 
 ---
 
-## 2. Execution Flow
+### 2. Execution Flow
 
 In this approach, the API is not statically imported (to prevent it from appearing in the Import Address Table / IAT). Instead, its address is resolved dynamically at runtime:
 
@@ -48,7 +48,7 @@ typedef NTSTATUS(WINAPI* PFN_SYS_FUNC_032)(PRC4_CTX pData, PRC4_CTX pKey);
 
 A suitable function pointer (`PFN_SYS_FUNC_032`) is defined to invoke the API once its memory address is resolved.
 
-### Execution Chain:
+#### Execution Chain:
 
 1. **Struct Initialization:** The `rc4Key` and `rc4Data` variables are defined, wrapping the raw memory addresses and lengths into the structure declared above:
 ```c
@@ -84,12 +84,12 @@ Upon completion, the contents of `payloadBuffer` are encrypted (or decrypted, if
 
 Now, let's examine how to implement RC4 with a custom routine.
 
-# Custom RC4
+## Custom RC4
 
 To avoid Blue Team detection mechanisms such as API hooking, the most reliable method is to implement the RC4 algorithm directly from scratch within the code, without relying on any external DLLs or Windows APIs.
 
 > Note: The core C implementation of the RC4 algorithm examined below is adapted from the open-source CycloneCRYPTO library developed by Oryx Embedded:
-> `[https://www.oryx-embedded.com/doc/rc4_8c_source.html](https://www.oryx-embedded.com/doc/rc4_8c_source.html)`
+> https://www.oryx-embedded.com/doc/rc4_8c_source.html
 
 Mathematically, the RC4 algorithm consists of two primary routines. The entire operation is carried out on a 256-byte state array known as the S-box.
 
@@ -109,7 +109,7 @@ typedef struct _RC4_STATE {
 
 ---
 
-## State Initialization and Permutation (KSA)
+### State Initialization and Permutation (KSA)
 
 Once the struct is defined, we proceed to initialization via the `PrepareRc4` function. This function requires three fundamental parameters: our empty state object to be populated (`rc4Obj`), the encryption key (`secretKey`), and the key length (`keySize`).
 
@@ -151,11 +151,11 @@ Once `PrepareRc4` finishes, we obtain a fully permuted, high-entropy 256-byte `s
 
 ---
 
-## The Encryption Function (PRGA)
+### The Encryption Function (PRGA)
 
 Having prepared and permuted the state table, we move to the data encryption phase using the `Rc4Cipher` function.
 
-### Step 1: Context Restoration
+#### Step 1: Context Restoration
 
 ```c
 void Rc4Cipher(RC4_STATE* rc4Obj, const unsigned char* input, unsigned char* output, size_t length) 
@@ -170,7 +170,7 @@ void Rc4Cipher(RC4_STATE* rc4Obj, const unsigned char* input, unsigned char* out
 
 Here, we retrieve the initialized table (`s`) and the loop counters (`i` and `j`) from the `RC4_STATE` struct.
 
-### Step 2: Encryption Loop
+#### Step 2: Encryption Loop
 
 Now we proceed to the main loop that performs the actual payload transformation:
 

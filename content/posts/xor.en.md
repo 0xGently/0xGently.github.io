@@ -7,7 +7,7 @@ tags:
   - encryption
 ---
 
-# XOR Encryption
+## XOR Encryption
 
 In the world of malware development, one of the most critical factors determining the lifespan of your payload is how effectively you can conceal it. If you embed shellcode or a PE file into memory in plain text, static analysis tools and antivirus (AV) signatures will flag it within seconds.
 
@@ -15,9 +15,9 @@ This is precisely where payload encryption comes into play. In this post, we wil
 
 
 **Note**: You can find the complete code discussed in this post at:
-`[https://github.com/0xGently/Malware-Dev-Analysis-Library/blob/main/Payload-Encryption-and-Obfuscation/01-XOR/xor.c](https://github.com/0xGently/Malware-Dev-Analysis-Library/blob/main/Payload-Encryption-and-Obfuscation/01-XOR/xor.c)`
+https://github.com/0xGently/Malware-Dev-Analysis-Library/blob/main/Payload-Encryption-and-Obfuscation/01-XOR/xor.c
 
-## XOR (Exclusive OR)
+### XOR (Exclusive OR)
 
 The XOR operator (`^`) is indispensable in cryptography and malware development because it is symmetric. In other words, you use the exact same operation to both encrypt and decrypt data:
 
@@ -26,7 +26,7 @@ The XOR operator (`^`) is indispensable in cryptography and malware development 
 
 This characteristic provides substantial flexibility and code economy; there is no need to write a separate decryption routine. Let's see how this logic translates into code.
 
-## Single-Byte Key XOR
+### Single-Byte Key XOR
 
 Let's begin with the simplest form: a function that encrypts the entire payload using a single byte key.
 
@@ -51,7 +51,7 @@ The logic is straightforward: a `for` loop iterates sequentially through the pay
 
 While this approach might initially bypass basic signature-based static scans, it is largely insufficient today. Because a single-byte key is used, repeating byte sequences in the payload (such as consecutive `0x00` null bytes) will consistently produce the same encrypted byte value throughout the output.
 
-## Advanced Rolling XOR
+### Advanced Rolling XOR
 
 Having seen the limitations of a single-byte key, bypassing modern security controls requires a mechanism where identical input bytes yield distinct outputs across different offsets.
 
@@ -83,11 +83,11 @@ static VOID CustomRollingXor(IN PBYTE dataBuffer, IN SIZE_T dataLen, IN PBYTE ke
 
 This function extends basic XOR into a significantly more resilient routine. Here is how it functions step-by-step:
 
-### 1. Multi-Byte Rolling Key Structure (`keyIndex`)
+#### 1. Multi-Byte Rolling Key Structure (`keyIndex`)
 
 Instead of a single byte, encryption relies on an array of bytes (e.g., `0xDE`, `0xAD`, `0xBE`, `0xEF`). The `keyIndex` counter steps through this array sequentially. When the end of the key buffer is reached, the condition `if (keyIndex == keyLen)` resets the index to zero. This cyclic reuse ("rolling") allows continuous encryption regardless of the payload's length.
 
-### 2. Position-Dependent Mutation (`positionSalt`)
+#### 2. Position-Dependent Mutation (`positionSalt`)
 
 This step disrupts repetitive byte patterns and defeats simple frequency analysis. In addition to the key byte, the current buffer index (`i`) is incorporated into the operation via the `positionSalt` variable:
 
@@ -98,15 +98,15 @@ The resulting dynamic salt is combined with the key byte to transform the data b
 
 Predicting or reversing this position-mutated sequence via static frequency analysis is substantially more difficult than breaking standard single-byte XOR schemes.
 
-How is This Technique Detected?
-1. Static Analysis
+## How is This Technique Detected?
+### Static Analysis
 The clues we can identify during static analysis include:
 
 Suspicious Mathematical Signatures: XOR operations are frequently used in legitimate software. However, if consecutive instructions such as XOR, MUL (multiplication), and SHR (right shift) are contained within a loop structure (CMP and JMP blocks) inside a single code block, this is highly likely to be flagged as a "Decryption Stub."
 
 High Entropy: If sections like .data or .rsrc contain large chunks of meaningless, completely random data (high entropy), this raises strong suspicion that the section contains encrypted data or code.
 
-2. Dynamic Analysis
+### Dynamic Analysis
 During dynamic analysis, analysts typically look at the following workflow:
 
 Hardware Breakpoint: A hardware breakpoint is placed directly on the memory address of the high-entropy encrypted data identified during static analysis.

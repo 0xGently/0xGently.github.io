@@ -14,7 +14,7 @@ When developing software, obfuscating the code sometimes plays a critical role n
 
 But what if we could take this shellcode and make it look like a perfectly innocent network configuration file? In this post, that is exactly what we are going to do. We will split our shellcode into pieces and convert each piece into a standard **IPv4 address** string (such as `192.168.1.1`). This way, instead of suspicious hex values inside our file, hundreds of innocent-looking IP addresses will appear.
 
-**Note**: You can find the entirety of the code explained in this text at github.com. Furthermore, once you grasp the logic of this topic, the workflow of other techniques (such as MAC and UUID obfuscation) is exactly identical.
+**Note**: You can find the entirety of the code explained in this text at https://github.com/0xGently/Malware-Dev-Analysis-Library/tree/main/Payload-Encryption-and-Obfuscation/05-IPv4_IPv6_Obf. Furthermore, once you grasp the logic of this topic, the workflow of other techniques (such as MAC and UUID obfuscation) is exactly identical.
 
 ### 1. The GeneratePkcs7Padding Function
 

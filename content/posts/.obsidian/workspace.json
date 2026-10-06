@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chacha20.en.md",
+                "file": "chacha20.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "chacha20.en"
+              "title": "chacha20"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "chacha20.en.md",
+                "file": "chacha20.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "chacha20.en.md",
+                "file": "chacha20.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chacha20.en.md",
+                "file": "chacha20.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,19 +190,19 @@
   },
   "active": "e654b414d262d795",
   "lastOpenFiles": [
-    "chacha20.md",
     "chacha20.en.md",
-    "assembly.md",
-    "rc4.en.md",
-    "rc4.md",
-    "packet-crafting.en.md",
-    "packet-crafting.md",
+    "ıpv4_deobf.md",
+    "ıpv4_deobf.en.md",
     "ıpv4_obf.en.md",
     "ıpv4_obf.md",
-    "ıpv4_deobf.en.md",
-    "ıpv4_deobf.md",
-    "assembly.en.md",
+    "packet-crafting.md",
+    "packet-crafting.en.md",
+    "xor.md",
     "xor.en.md",
-    "xor.md"
+    "rc4.en.md",
+    "rc4.md",
+    "chacha20.md",
+    "assembly.md",
+    "assembly.en.md"
   ]
 }

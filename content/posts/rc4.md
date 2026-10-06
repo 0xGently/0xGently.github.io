@@ -65,7 +65,7 @@ SysFunc032(&rc4Data, &rc4Key)
 
 İşlem sonucunda `payloadBuffer` içindeki veri bellekte doğrudan şifrelenmiş (veya zaten şifreliyse çözülmüş) olur.
 
-Şimdi ise Custom olara rc4 şifrelemeyi nasıl yapacağımıza bakalım.
+Şimdi ise Custom olarak rc4 şifrelemeyi nasıl yapacağımıza bakalım.
 ### Custom RC4
 
 API Hooking gibi Blue Team engellerine takılmamak için en güvenli yöntem, RC4 algoritmasını hiçbir dış DLL'e veya Windows API'sine ihtiyaç duymadan sıfırdan koda gömmektir.
