@@ -1,0 +1,23 @@
+<div class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Site.Params.homeInfoParams.Title | markdownify }}</h1>
+    </header>
+
+    {{ with .Site.Params.homeInfoParams.avatarUrl }}
+    <div class="hero-avatar-wrap">
+        <img src="{{ . }}" alt="avatar" class="hero-avatar">
+    </div>
+    {{ end }}
+
+    {{ with .Site.Params.homeInfoParams.quote }}
+    <p class="hero-quote">{{ . }}</p>
+    {{ end }}
+
+    <div class="entry-content">
+        {{ .Site.Params.homeInfoParams.Content | markdownify }}
+    </div>
+
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "Context" . "Scope" "header") }}
+    </footer>
+</div>

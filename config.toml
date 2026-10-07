@@ -33,7 +33,9 @@ theme = 'PaperMod'
   # Ana Sayfa Bilgileri (Boşluksuz tek satır yapıldı ki kod bloğuna dönüşmesin)
   [params.homeInfoParams]
     Title = "0xGently"
-    Content = """<img src="https://avatars.githubusercontent.com/u/225085536?v=4" alt="0xGently" style="display: block; margin: 0 auto 15px auto; width: 140px; border-radius: 50%;">Malware Analysis | Reverse Engineering | CTI"""
+    avatarUrl = "https://avatars.githubusercontent.com/u/225085536?v=4"
+    quote = "// It's not a feature, it's just a bug."
+    Content = "Malware Analysis | Reverse Engineering | CTI"
 
   # Your social media and GitHub links
   [[params.socialIcons]]
