@@ -1,6 +1,6 @@
 ---
 title: Process Enumeration
-date: 2026-10-8
+date: 2026-10-05
 draft: false
 author: 0xGently
 tags:
