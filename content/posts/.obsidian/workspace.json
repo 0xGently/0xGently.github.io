@@ -35,7 +35,8 @@
               "title": "NtQuerySystemInformation"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -202,8 +203,9 @@
       "bases:Yeni taban oluştur": false
     }
   },
-  "active": "e5f073cd222f9a29",
+  "active": "f47e88feeebaa37c",
   "lastOpenFiles": [
+    "ıpv4_deobf.md",
     "NtQuerySystemInformation.md",
     "NtQuerySystemInformation.en.md",
     "packet-crafting.en.md",
@@ -211,7 +213,6 @@
     "enum_process.md",
     "chacha20.md",
     "chacha20.en.md",
-    "ıpv4_deobf.md",
     "ıpv4_deobf.en.md",
     "ıpv4_obf.en.md",
     "ıpv4_obf.md",
