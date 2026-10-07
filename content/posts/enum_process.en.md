@@ -1,7 +1,7 @@
 ---
 tags:
   - Enumeration
-date: 2026-02-03
+date: 2026-10-08
 author: 0xGently
 title: " Process Enumeration"
 draft:
