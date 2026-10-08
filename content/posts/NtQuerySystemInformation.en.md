@@ -1,5 +1,5 @@
 ---
-title: Process Enumeration
+title: Process Enumeration-2
 date: 2026-10-05
 draft: false
 author: 0xGently

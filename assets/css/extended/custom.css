@@ -97,3 +97,7 @@
 .post-entry {
     border: 1px solid var(--accent);
 }
+
+.post-meta span {
+    display: inline-block;
+}
