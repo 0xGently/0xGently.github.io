@@ -34,8 +34,19 @@
               "icon": "lucide-file",
               "title": "thread_hijacking.en"
             }
+          },
+          {
+            "id": "b06be72e78457795",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Yeni sekme"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -202,7 +213,7 @@
       "bases:Yeni taban oluştur": false
     }
   },
-  "active": "e5f073cd222f9a29",
+  "active": "b06be72e78457795",
   "lastOpenFiles": [
     "thread_hijacking.en.md",
     "thread_hijacking.md",
