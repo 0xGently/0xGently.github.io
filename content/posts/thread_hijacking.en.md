@@ -202,6 +202,5 @@ And so the final chain comes to an end like this:
 
 As you can see, this topic really offers us an extra method for the question "how can we execute our own shellcode/payload (whatever name you give it)?" .Instead of imagining this process solely in this way, it’s helpful to consider that we could take a different approach and run our own code in an entirely different manner. After all, throughout this text, we’ve seen not just one method, but what a piece of malware can actually do when it goes beyond its own boundaries.
 
-
-
+**Note**: If you'd like the full code, you can find it at https://github.com/0xGently/Malware-Dev-Analysis-Library/tree/main/Injection/Thread%20Hijacking That's all for today—thank you for reading.
 

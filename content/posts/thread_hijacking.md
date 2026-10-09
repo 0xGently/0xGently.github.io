@@ -190,3 +190,5 @@ Artık son zincir ise bu şekilde son buluyor:
 3. `SetThreadContext` ile düzenlenmiş Threadi geri yükle . 
 
 Görüldüğü üzere bu konu aslında kendi shellcode/payload'ımızı (artık ne isim verirseniz) nasıl çalıştırabiliriz ? diye bize ekstra bir yöntem sunuyor. Bu işlemi tamamen bu şekilde hayal etmek yerine daha da farklılaştırıp bambaşka şekilde de kendi kodumuzu çalıştırabiliriz diye düşünmek faydalı. Zira bu metin boyunca sadece bir yöntem değil aslında bir zararlı yazılım kendi sınırları dışına çıkıp neler yapabilir ? bunlarıda görmüş olduk.
+
+**Not**:Kodun tamamını isterseniz https://github.com/0xGently/Malware-Dev-Analysis-Library/tree/main/Injection/Thread%20Hijacking adresinden bulabilirsiniz. Konumuz bu kadardı okuduğunuz için teşekkürler.
