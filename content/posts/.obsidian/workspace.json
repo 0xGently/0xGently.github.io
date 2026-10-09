@@ -35,8 +35,7 @@
               "title": "thread_hijacking.en"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -203,10 +202,10 @@
       "bases:Yeni taban oluştur": false
     }
   },
-  "active": "0ec0418bba293b1c",
+  "active": "e5f073cd222f9a29",
   "lastOpenFiles": [
-    "thread_hijacking.md",
     "thread_hijacking.en.md",
+    "thread_hijacking.md",
     "NtQuerySystemInformation.en.md",
     "Thread Hijacking.en.md",
     "NtQuerySystemInformation.md",
