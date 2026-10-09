@@ -1,3 +1,11 @@
+---
+title: Thread Hijacking
+tags:
+  - Execution
+date: 2026-10-09
+draft:
+author: 0xGently
+---
 ## Remote_Thread_Creation
 
 In this article, I will talk about a technique in which we suspend a legitimate process, inject shellcode into its memory region, and then manipulate the RIP/EIP registers of its existing thread.

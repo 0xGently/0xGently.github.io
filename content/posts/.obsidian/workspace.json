@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NtQuerySystemInformation.en.md",
+                "file": "thread_hijacking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NtQuerySystemInformation.en"
+              "title": "thread_hijacking"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thread_hijacking.md",
+                "file": "thread_hijacking.en.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "thread_hijacking"
+              "title": "thread_hijacking.en"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -203,12 +202,12 @@
       "bases:Yeni taban oluştur": false
     }
   },
-  "active": "0ec0418bba293b1c",
+  "active": "e5f073cd222f9a29",
   "lastOpenFiles": [
     "thread_hijacking.en.md",
-    "Thread Hijacking.en.md",
-    "NtQuerySystemInformation.en.md",
     "thread_hijacking.md",
+    "NtQuerySystemInformation.en.md",
+    "Thread Hijacking.en.md",
     "NtQuerySystemInformation.md",
     "ıpv4_deobf.md",
     "packet-crafting.en.md",

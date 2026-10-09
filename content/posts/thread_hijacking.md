@@ -1,5 +1,5 @@
 ---
-title: Thread_Hijacking
+title: Thread Hijacking
 tags:
   - Execution
 date: 2026-10-09
