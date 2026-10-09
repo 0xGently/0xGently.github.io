@@ -22,17 +22,17 @@
             }
           },
           {
-            "id": "f47e88feeebaa37c",
+            "id": "0ec0418bba293b1c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NtQuerySystemInformation.md",
+                "file": "thread_hijacking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NtQuerySystemInformation"
+              "title": "thread_hijacking"
             }
           }
         ],
@@ -203,9 +203,10 @@
       "bases:Yeni taban oluştur": false
     }
   },
-  "active": "f47e88feeebaa37c",
+  "active": "0ec0418bba293b1c",
   "lastOpenFiles": [
     "NtQuerySystemInformation.en.md",
+    "thread_hijacking.md",
     "NtQuerySystemInformation.md",
     "ıpv4_deobf.md",
     "packet-crafting.en.md",
