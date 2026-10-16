@@ -3,7 +3,7 @@ tags:
   - enumeration
 title: Thread_and_Process_Enumeration
 date: 2026-10-17
-draft:
+draft: false
 author: 0xGently
 ---
 In this article, I will explain how to gather information about processes or threads using the `CreateToolhelp32Snapshot` function.
