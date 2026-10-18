@@ -6,7 +6,8 @@ date: 2026-10-17
 draft: false
 author: 0xGently
 ---
-In this article, I will explain how to gather information about processes or threads using the `CreateToolhelp32Snapshot` function.
+
+ In this article, I will explain how to gather information about processes or threads using the `CreateToolhelp32Snapshot` function.
 
   If we want to interact with a target process in the tools we develop or the malware we write, we first need to pinpoint exactly where that process resides in the system.
  

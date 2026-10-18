@@ -2,12 +2,14 @@
 tags:
   - enumeration
 title: Thread_and_Process_Enumeration
-date: 2026-10-05
-draft:
+date: 2026-10-17
+draft: false
 author: 0xGently
 ---
 
-Bu yazımızda **`CreateToolhelp32Snapshot`** fonksiyonunu kullanarak nasıl process'ler veya thread'ler hakkında bilgi toplarız onu anlatacağım.
+
+Bu yazımızda **`CreateToolhelp32Snapshot`** fonksiyonunu kullanarak nasıl process'ler veya
+thread'ler hakkında bilgi toplarız onu anlatacağım.
 
 Geliştirdiğimiz araçlarda veya yazdığımız zararlılarda hedef aldığımız bir **process**'e müdahale etmek istiyorsak, öncelikle sistemde o **process**'in nerede durduğunu tam olarak tespit etmemiz gerekiyor. 
 Operasyonumuzu iki temel aşamaya böleceğiz. 
