@@ -1,0 +1,69 @@
+baseURL = 'https://0xGently.github.io/'
+defaultContentLanguage = 'tr'
+languageCode = 'tr-TR'
+title = '0xGently'
+theme = 'PaperMod'
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"] # Arama motorunun çalışması için JSON şart
+
+# HTML kodlarının çalışması için gereken güvenlik izni (En üstte olması daha sağlıklıdır)
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  # Locks the theme to dark mode by default
+  
+  defaultTheme = "dark"
+  
+  # Aesthetic settings for content
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  ShowBreadCrumbs = true
+  
+  [params.assets]
+    favicon = "/favicon.png"
+    favicon16x16 = "/favicon.png"
+    favicon32x32 = "/favicon.png"
+    apple_touch_icon = "/favicon.png"
+  # Enables the profile mode on the home page
+  [params.profileMode]
+    enabled = false
+    
+  # Ana Sayfa Bilgileri (Boşluksuz tek satır yapıldı ki kod bloğuna dönüşmesin)
+  [params.homeInfoParams]
+    Title = "0xGently"
+    avatarUrl = "https://avatars.githubusercontent.com/u/225085536?v=4"
+    quote = "// It's not a feature, it's just a bug."
+    Content = "Malware Analysis | Reverse Engineering | CTI"
+
+  # Your social media and GitHub links
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/0xGently"
+
+# Top menu settings
+[menu]
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archive"
+    url = "/archives/"
+    weight = 10
+    
+
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 20
+
+[languages]
+  [languages.tr]
+    languageName = "Türkçe"
+    weight = 1
+    title = "0xGently"
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    title = "0xGently"
+

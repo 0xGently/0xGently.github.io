@@ -1,0 +1,103 @@
+.hero-avatar-wrap {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.hero-avatar {
+  display: block;
+  width: 140px;
+  border-radius: 50%;
+}
+
+.hero-avatar-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 77, 77, 0.08) 0px,
+    rgba(255, 77, 77, 0.08) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+  animation: scan 6s linear infinite;
+}
+
+@keyframes scan {
+  0% { background-position-y: 0; }
+  100% { background-position-y: 200px; }
+}
+
+.hero-quote {
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  color: #ff4d4d;
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ff4d4d;
+  margin: 1.2rem auto 0.4rem;
+  width: 0;
+  animation:
+    typewriter 2.4s steps(40, end) 0.6s forwards,
+    blink 0.8s step-end infinite,
+    reveal 0s 0.6s forwards;
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes reveal {
+  to { opacity: 1; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.hero-subtitle {
+  margin-top: 0.8rem;
+}
+
+
+
+.first-entry.home-info {
+    align-items: center;
+    text-align: center;
+}
+.first-entry.home-info .entry-header {
+    text-align: center;
+}
+.first-entry.home-info .social-icons {
+    justify-content: center;
+}
+
+:root {
+    --accent: #ff4d4d;
+}
+
+.first-entry.home-info::after {
+    content: "Recent Posts";
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--accent); 
+    color: var(--primary);
+}
+
+.post-entry {
+    border: 1px solid var(--accent);
+}
+
+.post-meta span {
+    display: inline-block;
+}

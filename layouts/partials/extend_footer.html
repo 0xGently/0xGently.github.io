@@ -1,0 +1,24 @@
+<div style="text-align:center; margin-top: 8px; font-size: 0.85rem;">
+  <a href="mailto:seninmailin@example.com" style="color: var(--secondary);">gusto-stuck-cavity@duck.com</a>
+</div>
+
+<!-- Toggle button for document.designMode -->
+<button id="magicEditBtn" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; padding: 10px 15px; border-radius: 8px; background-color: var(--primary); color: var(--theme); border: none; cursor: pointer; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+  Edit Page
+</button>
+
+<script>
+  document.getElementById('magicEditBtn').addEventListener('click', function() {
+    if (document.designMode === "on") {
+      // Disable design mode and reset button style
+      document.designMode = "off";
+      this.innerText = "Edit Page";
+      this.style.backgroundColor = "var(--primary)";
+    } else {
+      // Enable design mode and change button style to indicate active state
+      document.designMode = "on";
+      this.innerText = "Disable Editing";
+      this.style.backgroundColor = "#e06c75"; // Highlight color for active state
+    }
+  });
+</script>
