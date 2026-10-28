@@ -3,6 +3,7 @@ defaultContentLanguage = 'tr'
 languageCode = 'tr-TR'
 title = '0xGently'
 theme = 'PaperMod'
+copyright = "Content is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). © 0xGently"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"] # Arama motorunun çalışması için JSON şart
